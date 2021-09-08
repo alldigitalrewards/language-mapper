@@ -27,4 +27,22 @@ class LanguageMappingTest extends TestCase
             $this->assertSame($language, $mapper->getLanguage());
         }
     }
+
+    public function testShortCodeReturnsLongCode()
+    {
+        $mapper = new LanguageMapper('fr');
+        $this->assertSame('fr_CA', $mapper->getLanguage());
+    }
+
+    public function testENLongCodeWithDashesReturnsLongCode()
+    {
+        $mapper = new LanguageMapper('en-US');
+        $this->assertSame('en_US', $mapper->getLanguage());
+    }
+
+    public function testEsLongCodeWithDashesReturnsLongCode()
+    {
+        $mapper = new LanguageMapper('es-ES');
+        $this->assertSame('es_ES', $mapper->getLanguage());
+    }
 }

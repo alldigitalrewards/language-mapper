@@ -20,6 +20,14 @@ Returns es_ES since language found in acceptable list:
 
 $mapper = new LanguageMapper('es_ES');
 $this->assertSame('es_ES', $mapper->getLanguage());
+
+You can pass in short code and/or long code with dashes
+
+$mapper = new LanguageMapper('fr');
+$this->assertSame('fr_CA', $mapper->getLanguage());
+        
+$mapper = new LanguageMapper('es-ES');
+$this->assertSame('es_ES', $mapper->getLanguage());
 ```
 ## Testing
 

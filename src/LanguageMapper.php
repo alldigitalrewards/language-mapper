@@ -40,7 +40,7 @@ class LanguageMapper
     /**
      * @var string
      */
-    private string $language = 'en_US';
+    private $language = 'en_US';
 
     /**
      * @param string $language

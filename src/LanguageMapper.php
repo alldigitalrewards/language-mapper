@@ -61,7 +61,7 @@ class LanguageMapper
     /**
      * @param string $language
      */
-    public function setLanguage(string $language): void
+    public function setLanguage(string $language)
     {
         if (empty($language) === true || empty(trim($language)) === true) {
             $this->language = self::DEFAULT_LANGUAGE;

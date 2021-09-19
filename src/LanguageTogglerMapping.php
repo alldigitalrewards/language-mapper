@@ -7,7 +7,7 @@ class LanguageTogglerMapping
     /**
      * @var string
      */
-    private $imgaeBasePath = 'https://storage.cloud.google.com/language_mapping/flags';
+    private $imgaeBasePath = 'https://storage.googleapis.com/language_mapping/flags';
 
     const CURRENT_LOCALES = [
         'en_US',

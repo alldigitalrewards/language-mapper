@@ -4,12 +4,22 @@ namespace AllDigitalRewards\LanguageMapper;
 
 class LanguageTogglerMapping
 {
-    /**
-     * Make sure to update this when/if more countries are added
-     * to LanguageMapper class
-     * @return array[]
-     */
-    public function getLanguageMapping(): array
+    const CURRENT_LOCALES = [
+        'en_US',
+        'es_US',
+        'es_ES',
+    ];
+
+    public function getMapping(): array
+    {
+        $container = [];
+        foreach (self::CURRENT_LOCALES as $locale) {
+            $container[$locale] = $this->getLanguageMapping()[$locale];
+        }
+        return $container;
+    }
+
+    private function getLanguageMapping(): array
     {
         return [
             'en_US' => [

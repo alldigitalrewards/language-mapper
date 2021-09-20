@@ -52,7 +52,7 @@ class LanguageMappingTest extends TestCase
         $mapping = new LanguageTogglerMapping();
         $this->assertSame(
             'https://storage.cloud.google.com/language_mapping/flags/de_DE.png',
-            $mapping->getLanguageMapping()['de_DE']['flag']
+            $mapping->getMapping()['de_DE']['flag']
         );
     }
 }

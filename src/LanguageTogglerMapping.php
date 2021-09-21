@@ -57,6 +57,11 @@ class LanguageTogglerMapping
                 'item' => _('Korean - KR'),
                 'flag' => $this->imageBasePath . '/ko_KR.png',
             ],
+            'it_IT' => [
+                'main' => _('Italian (IT)'),
+                'item' => _('Italian - IT'),
+                'flag' => $this->imageBasePath . '/it_IT.png',
+            ],
             'ms_MY' => [
                 'main' => _('Malaysian (MY)'),
                 'item' => _('Malaysian - MY'),

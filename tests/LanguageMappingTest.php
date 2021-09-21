@@ -46,13 +46,4 @@ class LanguageMappingTest extends TestCase
         $mapper = new LanguageMapper('es-ES');
         $this->assertSame('es_ES', $mapper->getLanguage());
     }
-
-    public function testGermanLanguageTogglerImagePath()
-    {
-        $mapping = new LanguageTogglerMapping();
-        $this->assertSame(
-            'https://storage.cloud.google.com/language_mapping/flags/de_DE.png',
-            $mapping->getMapping()['de_DE']['flag']
-        );
-    }
 }

@@ -3,7 +3,6 @@
 namespace AllDigitalRewards\Tests;
 
 use AllDigitalRewards\LanguageMapper\LanguageMapper;
-use AllDigitalRewards\LanguageMapper\LanguageTogglerMapping;
 use PHPUnit\Framework\TestCase;
 
 class LanguageMappingTest extends TestCase

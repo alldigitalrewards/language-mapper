@@ -13,12 +13,6 @@ class LanguageMappingTest extends TestCase
         $this->assertSame('en_US', $mapper->getLanguage());
     }
 
-    public function testReturnsEsES()
-    {
-        $mapper = new LanguageMapper('es_ES');
-        $this->assertSame('es_ES', $mapper->getLanguage());
-    }
-
     public function testReturnsAcceptableLanguages()
     {
         $languages = LanguageMapper::ACCEPTABLE_LANGUAGES;
@@ -28,21 +22,11 @@ class LanguageMappingTest extends TestCase
         }
     }
 
-    public function testShortCodeReturnsLongCode()
-    {
-        $mapper = new LanguageMapper('fr');
-        $this->assertSame('fr_CA', $mapper->getLanguage());
-    }
-
-    public function testENLongCodeWithDashesReturnsLongCode()
+    public function testLanguageCodeWithDashesReturnsLongCode()
     {
         $mapper = new LanguageMapper('en-US');
         $this->assertSame('en_US', $mapper->getLanguage());
-    }
-
-    public function testEsLongCodeWithDashesReturnsLongCode()
-    {
-        $mapper = new LanguageMapper('es-ES');
-        $this->assertSame('es_ES', $mapper->getLanguage());
+        $mapper = new LanguageMapper('en_US');
+        $this->assertSame('en_US', $mapper->getLanguage());
     }
 }

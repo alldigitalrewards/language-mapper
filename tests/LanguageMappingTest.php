@@ -29,4 +29,14 @@ class LanguageMappingTest extends TestCase
         $mapper = new LanguageMapper('en_US');
         $this->assertSame('en_US', $mapper->getLanguage());
     }
+
+    public function testShortLocaleCodesDefaultToEnglish()
+    {
+        $mapper = new LanguageMapper('en');
+        $this->assertSame('en_US', $mapper->getLanguage());
+        $mapper = new LanguageMapper('es');
+        $this->assertSame('en_US', $mapper->getLanguage());
+        $mapper = new LanguageMapper('pt');
+        $this->assertSame('en_US', $mapper->getLanguage());
+    }
 }

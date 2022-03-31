@@ -6,35 +6,25 @@ class LanguageMapper
 {
     const DEFAULT_LANGUAGE = 'en_US';
     const ACCEPTABLE_LANGUAGES = [
-        'es_ES',
-        'es_US',
-        'en_US',
-        'de_DE',
-        'fr_CA',
-        'fr_FR',
-        'hi_IN',
-        'it_IT',
-        'ja_JP',
-        'ko_KR',
-        'ms_MY',
-        'nl_NL',
-        'pt_BR',
-        'ru_RU',
-        'zh_Hans_CN',
-    ];
-    const TWO_CHAR_LOCALE_MAPPER = [
-        'en' => 'en_US',
-        'es' => 'es_US',
-        'de' => 'de_DE',
-        'fr' => 'fr_CA',
-        'hi' => 'hi_IN',
-        'it' => 'it_IT',
-        'ja' => 'ja_JP',
-        'ko' => 'ko_KR',
-        'nl' => 'nl_NL',
-        'pt' => 'pt_BR',
-        'ru' => 'ru_RU',
-        'zh' => 'zh_Hans_CN',
+        'pt_BR', // Brazilian Portuguese
+        'en_GB', // United Kingdom English
+        'fr_FR', // France French
+        'de_DE', // Germany German
+        'hi_IN', // India Hindi
+        'ja_JP', // Japan Japanese
+        'ko_KR', // South Korea Korean
+        'zh_CN', // China Simplified Chinese
+        'zh_TW', // Taiwan Traditional Chinese
+        'nl_NL', // Netherlands Dutch
+        'nl_BE', // Belgium Dutch
+        'ms_SG', // Singapore Malay
+        'ml_IN', // India Malayalam
+        'fr_CA', // Canada French
+        'ru_RU', // Russia Russian
+        'es_ES', // Spain Spanish
+        'it_IT', // Italy Italian
+        'es_US', // United States Spanish
+        'en_US', // United States English
     ];
 
     /**
@@ -76,12 +66,6 @@ class LanguageMapper
 
         if (in_array($language, self::ACCEPTABLE_LANGUAGES) === true) {
             return $language;
-        }
-
-        foreach (self::TWO_CHAR_LOCALE_MAPPER as $shortCode => $longCode) {
-            if (strtolower($language) === $shortCode) {
-                return $longCode;
-            }
         }
 
         return self::DEFAULT_LANGUAGE;

@@ -25,6 +25,11 @@ class LanguageMapper
         'it_IT', // Italy Italian
         'es_US', // United States Spanish
         'en_US', // United States English
+        'es_CL', // Chile Spanish
+        'es_CR', // Costa Rica Spanish
+        'es_GT', // Guatemala Spanish
+        'es_MX', // Mexico Spanish
+        'es_PE', // Peru Spanish
     ];
 
     /**

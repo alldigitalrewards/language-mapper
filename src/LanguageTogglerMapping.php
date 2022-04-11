@@ -107,6 +107,36 @@ class LanguageTogglerMapping
                 'item' => 'English - US',
                 'flag' => $this->imageBasePath . '/en_US.png',
             ],
+            'es_CL' => [
+                'main' => 'Spanish (CL)',
+                'item' => 'Spanish - CL',
+                'flag' => $this->imageBasePath . '/es_CL.png',
+            ],
+            'es_CR' => [
+                'main' => 'Spanish (CR)',
+                'item' => 'Spanish - CR',
+                'flag' => $this->imageBasePath . '/es_CR.png',
+            ],
+            'es_GT' => [
+                'main' => 'Spanish (GT)',
+                'item' => 'Spanish - GT',
+                'flag' => $this->imageBasePath . '/es_GT.png',
+            ],
+            'es_MX' => [
+                'main' => 'Spanish (MX)',
+                'item' => 'Spanish - MX',
+                'flag' => $this->imageBasePath . '/es_MX.png',
+            ],
+            'es_PE' => [
+                'main' => 'Spanish (PE)',
+                'item' => 'Spanish - PE',
+                'flag' => $this->imageBasePath . '/es_PE.png',
+            ],
+            'es_PR' => [
+                'main' => 'Spanish (PR)',
+                'item' => 'Spanish - PR',
+                'flag' => $this->imageBasePath . '/es_PR.png',
+            ],
         ];
     }
 }

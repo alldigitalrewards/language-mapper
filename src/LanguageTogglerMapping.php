@@ -88,8 +88,8 @@ class LanguageTogglerMapping
                 'flag' => $this->imageBasePath . '/ru_RU.png',
             ],
             'es_ES' => [
-                'main' => 'Espanol (ES)',
-                'item' => 'Espanol - ES',
+                'main' => 'Spanish (ES)',
+                'item' => 'Spanish - ES',
                 'flag' => $this->imageBasePath . '/es_ES.png',
             ],
             'it_IT' => [
@@ -98,8 +98,8 @@ class LanguageTogglerMapping
                 'flag' => $this->imageBasePath . '/it_IT.png',
             ],
             'es_US' => [
-                'main' => 'Espanol (US)',
-                'item' => 'Espanol - US',
+                'main' => 'Spanish (US)',
+                'item' => 'Spanish - US',
                 'flag' => $this->imageBasePath . '/en_US.png',
             ],
             'en_US' => [

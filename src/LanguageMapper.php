@@ -17,7 +17,6 @@ class LanguageMapper
         'zh_TW', // Taiwan Traditional Chinese
         'nl_NL', // Netherlands Dutch
         'nl_BE', // Belgium Dutch
-        'ms_SG', // Singapore Malay
         'ml_IN', // India Malayalam
         'fr_CA', // Canada French
         'ru_RU', // Russia Russian
@@ -30,6 +29,7 @@ class LanguageMapper
         'es_GT', // Guatemala Spanish
         'es_MX', // Mexico Spanish
         'es_PE', // Peru Spanish
+        'es_PR', // Puerto Rico Spanish
     ];
 
     /**

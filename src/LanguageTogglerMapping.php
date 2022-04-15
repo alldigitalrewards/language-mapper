@@ -67,11 +67,6 @@ class LanguageTogglerMapping
                 'item' => 'Dutch - BE',
                 'flag' => $this->imageBasePath . '/nl_BE.png',
             ],
-            'ms_SG' => [
-                'main' => 'Malaysian (SG)',
-                'item' => 'Malaysian - SG',
-                'flag' => $this->imageBasePath . '/ms_SG.png',
-            ],
             'ml_IN' => [
                 'main' => 'Malayalam (IN)',
                 'item' => 'Malayalam - IN',

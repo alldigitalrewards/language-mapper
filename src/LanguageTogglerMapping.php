@@ -17,10 +17,40 @@ class LanguageTogglerMapping
                 'item' => 'Portuguese - BR',
                 'flag' => $this->imageBasePath . '/pt_BR.png',
             ],
+            'pt_PT' => [
+                'main' => 'Portuguese (PT)',
+                'item' => 'Portuguese - PT',
+                'flag' => $this->imageBasePath . '/pt_PT.png',
+            ],
             'en_GB' => [
                 'main' => 'English (UK)',
                 'item' => 'English - UK',
                 'flag' => $this->imageBasePath . '/en_GB.png',
+            ],
+            'en_PH' => [
+                'main' => 'English (PH)',
+                'item' => 'English - PH',
+                'flag' => $this->imageBasePath . '/en_PH.png',
+            ],
+            'en_NZ' => [
+                'main' => 'English (NZ)',
+                'item' => 'English - NZ',
+                'flag' => $this->imageBasePath . '/en_NZ.png',
+            ],
+            'en_AU' => [
+                'main' => 'English (AU)',
+                'item' => 'English - AU',
+                'flag' => $this->imageBasePath . '/en_AU.png',
+            ],
+            'en_IE' => [
+                'main' => 'English (IE)',
+                'item' => 'English - IE',
+                'flag' => $this->imageBasePath . '/en_IE.png',
+            ],
+            'ga_IE' => [
+                'main' => 'Gaelic (IE)',
+                'item' => 'Gaelic - IE',
+                'flag' => $this->imageBasePath . '/ga_IE.png',
             ],
             'fr_FR' => [
                 'main' => 'French (FR)',
@@ -31,6 +61,16 @@ class LanguageTogglerMapping
                 'main' => 'German (DE)',
                 'item' => 'German - DE',
                 'flag' => $this->imageBasePath . '/de_DE.png',
+            ],
+            'de_CH' => [
+                'main' => 'Swiss (CH)',
+                'item' => 'Swiss - CH',
+                'flag' => $this->imageBasePath . '/de_CH.png',
+            ],
+            'de_AT' => [
+                'main' => 'Austrian (AT)',
+                'item' => 'Austrian - AT',
+                'flag' => $this->imageBasePath . '/de_AT.png',
             ],
             'hi_IN' => [
                 'main' => 'Hindu (IN)',
@@ -56,6 +96,21 @@ class LanguageTogglerMapping
                 'main' => 'Chinese (TW)',
                 'item' => 'Chinese - TW',
                 'flag' => $this->imageBasePath . '/zh_TW.png',
+            ],
+            'zh_MO' => [
+                'main' => 'Chinese (MO)',
+                'item' => 'Chinese - MO',
+                'flag' => $this->imageBasePath . '/zh_MO.png',
+            ],
+            'zh_SG' => [
+                'main' => 'Chinese (SG)',
+                'item' => 'Chinese - SG',
+                'flag' => $this->imageBasePath . '/zh_SG.png',
+            ],
+            'zh_HK' => [
+                'main' => 'Chinese (HK)',
+                'item' => 'Chinese - HK',
+                'flag' => $this->imageBasePath . '/zh_HK.png',
             ],
             'nl_NL' => [
                 'main' => 'Dutch (NL)',
@@ -131,6 +186,166 @@ class LanguageTogglerMapping
                 'main' => 'Spanish (PR)',
                 'item' => 'Spanish - PR',
                 'flag' => $this->imageBasePath . '/es_PR.png',
+            ],
+            'es_UY' => [
+                'main' => 'Spanish (UY)',
+                'item' => 'Spanish - UY',
+                'flag' => $this->imageBasePath . '/es_UY.png',
+            ],
+            'es_CO' => [
+                'main' => 'Spanish (CO)',
+                'item' => 'Spanish - CO',
+                'flag' => $this->imageBasePath . '/es_CO.png',
+            ],
+            'es_AR' => [
+                'main' => 'Spanish (AR)',
+                'item' => 'Spanish - AR',
+                'flag' => $this->imageBasePath . '/es_AR.png',
+            ],
+            'ur_PK' => [
+                'main' => 'Pakistani (PK)',
+                'item' => 'Pakistani - PK',
+                'flag' => $this->imageBasePath . '/ur_PK.png',
+            ],
+            'vi_VN' => [
+                'main' => 'Vietnamese (VN)',
+                'item' => 'Vietnamese - VN',
+                'flag' => $this->imageBasePath . '/vi_VN.png',
+            ],
+            'tr_TR' => [
+                'main' => 'Turkish (TR)',
+                'item' => 'Turkish - TR',
+                'flag' => $this->imageBasePath . '/tr_TR.png',
+            ],
+            'th_TH' => [
+                'main' => 'Thai (TH)',
+                'item' => 'Thai - TH',
+                'flag' => $this->imageBasePath . '/th_TH.png',
+            ],
+            'ar_SA' => [
+                'main' => 'Arabic (SA)',
+                'item' => 'Arabic - SA',
+                'flag' => $this->imageBasePath . '/ar_SA.png',
+            ],
+            'ar_QA' => [
+                'main' => 'Arabic (QA)',
+                'item' => 'Arabic - QA',
+                'flag' => $this->imageBasePath . '/ar_QA.png',
+            ],
+            'ar_OM' => [
+                'main' => 'Arabic (OM)',
+                'item' => 'Arabic - OM',
+                'flag' => $this->imageBasePath . '/ar_OM.png',
+            ],
+            'ar_KW' => [
+                'main' => 'Arabic (KW)',
+                'item' => 'Arabic - KW',
+                'flag' => $this->imageBasePath . '/ar_KW.png',
+            ],
+            'ar_JO' => [
+                'main' => 'Arabic (JO)',
+                'item' => 'Arabic - JO',
+                'flag' => $this->imageBasePath . '/ar_JO.png',
+            ],
+            'ar_EG' => [
+                'main' => 'Egyptian (EG)',
+                'item' => 'Egyptian - EG',
+                'flag' => $this->imageBasePath . '/ar_EG.png',
+            ],
+            'ar_BH' => [
+                'main' => 'Arabic (BH)',
+                'item' => 'Arabic - BH',
+                'flag' => $this->imageBasePath . '/ar_BH.png',
+            ],
+            'ar_AE' => [
+                'main' => 'Arabic (AE)',
+                'item' => 'Arabic - AE',
+                'flag' => $this->imageBasePath . '/ar_AE.png',
+            ],
+            'nn_NO' => [
+                'main' => 'Norwegian (NO)',
+                'item' => 'Norwegian - NO',
+                'flag' => $this->imageBasePath . '/nn_NO.png',
+            ],
+            'si_LK' => [
+                'main' => 'Sri Lankan (LK)',
+                'item' => 'Sri Lankan - LK',
+                'flag' => $this->imageBasePath . '/si_LK.png',
+            ],
+            'he_IL' => [
+                'main' => 'Israeli (IL)',
+                'item' => 'Israeli - IL',
+                'flag' => $this->imageBasePath . '/he_IL.png',
+            ],
+            'id_ID' => [
+                'main' => 'Indonesian (ID)',
+                'item' => 'Indonesian - ID',
+                'flag' => $this->imageBasePath . '/id_ID.png',
+            ],
+            'hu_HU' => [
+                'main' => 'Hungarian (HU)',
+                'item' => 'Hungarian - HU',
+                'flag' => $this->imageBasePath . '/hu_HU.png',
+            ],
+            'hr_HR' => [
+                'main' => 'Croatian (HR)',
+                'item' => 'Croatian - HR',
+                'flag' => $this->imageBasePath . '/hr_HR.png',
+            ],
+            'bn_BD' => [
+                'main' => 'Bengali (BD)',
+                'item' => 'Bengali - BD',
+                'flag' => $this->imageBasePath . '/bn_BD.png',
+            ],
+            'ro_RO' => [
+                'main' => 'Romanian (RO)',
+                'item' => 'Romanian - RO',
+                'flag' => $this->imageBasePath . '/ro_RO.png',
+            ],
+            'sl_SI' => [
+                'main' => 'Slovakian (SI)',
+                'item' => 'Slovakian - SI',
+                'flag' => $this->imageBasePath . '/sl_SI.png',
+            ],
+            'sv_SE' => [
+                'main' => 'Swedish (SE)',
+                'item' => 'Swedish - SE',
+                'flag' => $this->imageBasePath . '/sv_SE.png',
+            ],
+            'pl_PL' => [
+                'main' => 'Polish (PL)',
+                'item' => 'Polish - PL',
+                'flag' => $this->imageBasePath . '/pl_PL.png',
+            ],
+            'el_GR' => [
+                'main' => 'Greek (GR)',
+                'item' => 'Greek - GR',
+                'flag' => $this->imageBasePath . '/el_GR.png',
+            ],
+            'fi_FI' => [
+                'main' => 'Finnish (FI)',
+                'item' => 'Finnish - FI',
+                'flag' => $this->imageBasePath . '/fi_FI.png',
+            ],
+            'sv_FI' => [
+                'main' => 'Finnish (SV)',
+                'item' => 'Finnish - SV',
+                'flag' => $this->imageBasePath . '/sv_FI.png',
+            ],
+            'da_DK' => [
+                'main' => 'Danish (DK)',
+                'item' => 'Danish - DK',
+                'flag' => $this->imageBasePath . '/da_DK.png',
+            ],
+            'cs_CZ' => [
+                'main' => 'Czech (CZ)',
+                'item' => 'Czech - CZ',
+                'flag' => $this->imageBasePath . '/cs_CZ.png',
+            ],
+            'bg_BG' => [
+                'main' => 'Bulgarian (BG)',
+                'item' => 'Bulgarian - BG',
+                'flag' => $this->imageBasePath . '/bg_BG.png',
             ],
         ];
     }

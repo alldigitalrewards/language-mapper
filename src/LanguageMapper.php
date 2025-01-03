@@ -44,7 +44,7 @@ class LanguageMapper
         'bg_BG', // Bulgarian
         'cs_CZ', // Czech Republic
         'da_DK', // Denmark
-        'cs_CZ', // Finnish
+        'sv_FI', // Finnish
         'fi_FI', // Finnish
         'el_GR', // Greek
         'ga_IE', // Irish

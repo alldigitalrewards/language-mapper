@@ -7,35 +7,36 @@ use PHPUnit\Framework\TestCase;
 
 class LanguageTogglerMappingTest extends TestCase
 {
-    public function testItemLabelsOmitRegionSuffix()
+    public function testEveryEntryExposesARegionlessLabel()
     {
         foreach ($this->getMapping() as $locale => $entry) {
+            $this->assertArrayHasKey('label', $entry, "missing label for {$locale}");
+            $this->assertNotSame('', $entry['label'], "empty label for {$locale}");
             $this->assertSame(
                 0,
-                preg_match('/ - [A-Z]{2}$/', $entry['item']),
-                "item label for {$locale} still carries a region suffix: {$entry['item']}"
+                preg_match('/ - [A-Z]{2}$/', $entry['label']),
+                "label for {$locale} carries a dash region suffix: {$entry['label']}"
+            );
+            $this->assertSame(
+                0,
+                preg_match('/ \([A-Z]{2}\)$/', $entry['label']),
+                "label for {$locale} carries a parenthetical region suffix: {$entry['label']}"
             );
         }
     }
 
-    public function testMainLabelsOmitRegionSuffix()
+    public function testMainAndItemRetainRegionSuffix()
     {
         foreach ($this->getMapping() as $locale => $entry) {
             $this->assertSame(
-                0,
+                1,
                 preg_match('/ \([A-Z]{2}\)$/', $entry['main']),
-                "main label for {$locale} still carries a region suffix: {$entry['main']}"
+                "main for {$locale} no longer carries its region: {$entry['main']}"
             );
-        }
-    }
-
-    public function testMainAndItemLabelsMatch()
-    {
-        foreach ($this->getMapping() as $locale => $entry) {
             $this->assertSame(
-                $entry['main'],
-                $entry['item'],
-                "main and item labels diverge for {$locale}"
+                1,
+                preg_match('/ - [A-Z]{2}$/', $entry['item']),
+                "item for {$locale} no longer carries its region: {$entry['item']}"
             );
         }
     }

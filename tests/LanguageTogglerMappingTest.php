@@ -41,6 +41,16 @@ class LanguageTogglerMappingTest extends TestCase
         }
     }
 
+    public function testSpanishNamesAreSpelledWithTheEnye()
+    {
+        $mapping = $this->getMapping();
+
+        $this->assertSame('Español (US)', $mapping['es_US']['main']);
+        $this->assertSame('Español - US', $mapping['es_US']['item']);
+        $this->assertSame('Español (ES)', $mapping['es_ES']['main']);
+        $this->assertSame('Español - ES', $mapping['es_ES']['item']);
+    }
+
     private function getMapping(): array
     {
         return (new LanguageTogglerMapping())->getMapping();
